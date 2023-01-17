@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style2.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="script3.js"></script>
+   
 </head>
-<body>
-    <header align="center"><h1><image src="midimage/llogo.png" alt="logo" width="50px"></image>MIDI ONLINE ONLINE SHOPPING</h1>
-        <br>   
-        <nav align="end">
-            <a href="homee.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="aboutme.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="contacts.html">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="shops.html">SHOP</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="bondas.html">BONDA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="rents.html">RENT</a>
-        </nav>
-        <br><br><br>
+<body id="header">
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="black" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="black" stroke-width="5"/>  
+                    <path d="M0,23 30,23" stroke="black" stroke-width="5"/>
+                </svg>
+            </a>
+        </span> 
+     </nav>
+     <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="homee.html">HOME</a>
+        <a href="aboutme.html">ABOUT</a>
+        <a href="contacts.html">CONTACT</a>
+        <a href="shops.html">SHOP</a>
+        <a href="bondas.html">BONDA</a>
+        <a href="rents.html">RENT</a>
+     </div>
     <section>
-        <form>
-            <h>Contact Me</h>
+        <header align="center" ><h1><image src="midimage/llogo.png" alt="logo" width="50px"></image>MIDI ONLINE ONLINE SHOPPING</h1>
+            <br>   
+            <nav align="end" id="nav">
+                <a href="homee.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="aboutme.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contacts.html" class="active">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="shops.html">SHOP</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="bondas.html">BONDA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="rents.html">RENT</a>
+            </nav>
+            <br><br>
+            
+    </section> 
+    <section id="form"> 
+        <div id="error"></div>
+        <form id="formis" >
+            <h class="contact">Contact Me</h>
             <p>Have any questions or concerns? We are always ready to help!<br><br>
                 Call us at <a href="+251964506293"> <image src="midimage//call.png" alt="call logo" width="25px"></a><br><br>
                 Email us at <a href="+251964506293"><image src="midimage//email.png" alt="email logo" width="30px"></a>
             </p> <br>
-            <label>Full Name <input type="text" placeholder="FULLNAME" required><br><br>  </label>      
-            <label>Email <input type="text" placeholder="Email" required><br><br></label> 
-            <label>Messages<textarea rows="6" placeholder="Message" ></textarea><br><br> </label>            
+            <label for="names">Full Name <input id="names" type="text"  name="name"  placeholder="FULLNAME"><br><br>  </label>      
+            <label for="email">Email <input id="email" type="text" email="email" placeholder="Email"><br><br></label> 
+            <label for="messages">Messages<textarea id="messages" messages="messages" rows="6" placeholder="Message" ></textarea><br><br> </label>            
             <button type="submit">Submit</button>
 
         </form>
     </section>    
-    <section align="left">
+    <section align="left" class="connected">
         <h4>STAY CONNECTED</h4>
         <a href="https://www.facebook.com/profile.php?id=100004932137827&mibextid=ZbWKw" target="_blank"><img src="midimage/44646.png" alt="facebook log" width="30px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://twitter.com/i/flow/login" target="_blank" ><img src="midimage/twitter.png" alt="twitter page" width="30px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -40,4 +67,4 @@
         <a href="https://www.instagram.com/"  target="_blank"><img src="midimage/ccom.png" alt="Instagram page" width="30px"></a>
     </section>  
 </body>
-</html>
+</html> 
